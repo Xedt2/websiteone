@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Home</title>
+     </head>
+    <style>
+        body{
+            margin: 0;
+            background-color:   #19191b;
+        }
+        .header{
+            background-color: #252528;
+            height: 90px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border: solid;
+            border-width: 1px;
+            border-color: transparent;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+        .buttonsd{
+            background-color: transparent;
+        }
+
+        .aboutmeb,.loginb,.signupb{
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(138, 140, 164);
+            vertical-align: top;
+            width: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 20px;
+            border: solid;
+            border-color: transparent;
+            border-width: 1px;
+            background-color: rgb(67, 68, 85);
+            margin-left: 3px; 
+            display: inline-block;
+            position: relative;
+            margin-left: 20%;
+            margin-top: 1.3%;
+            transition: border-color 0.3s, bckground-color 0.3s, color 0.3s, opacity 0.2s;
+        }
+        .aboutmeb:hover,.loginb:hover,.signupb:hover{
+            background-color:  rgb(57, 57, 140);
+            color: rgb(224, 227, 237);
+            cursor: pointer;
+        }
+        .aboutmeb:active,.loginb:active,.signupb:active{
+            opacity: 0.8;
+        }
+
+        .header:hover{
+            border-bottom-color: rgb(255, 255, 255);
+            border-left-color: white;
+            border-right-color: white;
+            background-color: rgb(33, 33, 39);
+            box-shadow: 0px 0px 10px 1px rgb(88, 86, 90);
+        }
+        .field1{
+            height: 260px;
+            width: 40%;
+            background-color: #252528;
+            margin-top: 70px;
+            margin-left: 70px;
+            border-radius: 22px;
+            border: solid;
+            border-width: 1px;
+            border-color: transparent;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+        }
+        .field2{
+            height: 260px;
+            width: 40%;
+            background-color:#252528;
+            margin-top: 25px;
+            margin-left: 70px;
+            display: inline-block;
+            border-radius: 22px;
+            border: solid;
+            border-width: 1px;
+            border-color: transparent;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+            display: flex;
+            justify-content:first baseline;
+        }
+        .field3{
+            height: 510pxpx;
+            width: 50%;
+            background-color: #252528;
+            margin-left: 700px;
+            margin-top: -550px;
+            margin-right: 70px;
+            border-radius: 22px;
+            border: solid;
+            border-width: 1px;
+            border-color: transparent;
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+        }
+        .fieldscont{
+            display: grid;
+            columns: 2;
+        }
+        .field1:hover{
+            border-color: rgb(0, 208, 255);
+            background-color: rgb(33, 33, 39) ;
+            box-shadow: 0px 0px 10px 1px rgb(28, 82, 118);
+        }
+        .field2:hover{
+             border-color: rgb(255, 51, 0);
+            background-color: rgb(33, 33, 39) ;
+            box-shadow: 0px 0px 10px 1px rgb(209, 19, 133);
+        }
+        .field3:hover{
+            border-color: rgb(64, 255, 0);
+            background-color: rgb(33, 33, 39) ;
+            box-shadow: 0px 0px 10px 1px rgb(30, 160, 13);
+        }
+        .field31{
+            width: 40%;
+            height: 200px;
+            background-color: rgb(53, 52, 55);
+            margin-left: 7.5%;
+            margin-top: 1%;
+            border-radius: 17px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+
+        }
+        .field32{
+       
+            width: 40%;
+            height: 200px;
+            background-color:  rgb(53, 52, 55);
+            margin-left: 5%;
+            margin-top: 1%;
+            border-radius: 17px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+   
+        }
+        .bot3{
+            height: 100%;
+            width: 100%;
+        }
+        .field33{
+            width: 90%;
+            height: 230px;
+            background-color: rgb(53, 52, 55);
+            margin-top: 5%;
+            margin-left: 5%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+
+        }
+        .upper3{
+            display: flex;
+            justify-content:first baseline;
+            margin-top: 30px;
+        }
+        .field21{
+            height: 80%;
+            width: 40%;
+            background-color: rgb(53, 52, 55);
+            margin-top: 4%;
+            margin-left: 7.5%;
+            border-radius: 17px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        .field22{
+            height: 80%;
+            width: 40%;
+            background-color: rgb(53, 52, 55);
+            margin-top: 4%;
+            margin-left: 5%;
+            border-radius: 17px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        .f111{
+            height: 100%;
+            width: 100%;
+        }
+        .field11{
+            height: 88%;
+            width: 88%;
+            background-color: rgb(53, 52, 55);
+            margin-top: 2.5%;
+            margin-left: 6%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        .content1{
+
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: rgb(72, 69, 69);
+            transition: color 0.2s;
+        }
+        .content2,.content3{
+            margin:auto ;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: rgb(72, 69, 69);
+            transition: color 0.2s;
+        }
+        .content4,.content5{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: rgb(72, 69, 69);
+            transition: color 0.2s;
+        }
+        .content4:hover,.content5:hover,.content6:hover,.content1:hover,.content2:hover,.content3:hover{
+            color: white;
+        }
+        .content6{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: rgb(72, 69, 69);
+            transition: color 0.2s;
+        }
+        .field11:hover,.field21:hover,.field22:hover,.field31:hover,.field32:hover,.field33:hover{
+            background-color: rgb(65, 64, 67) ;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+        <header class="header">
+            <div class="buttonsd">
+                <a><button class="aboutmeb">About us </button></a>
+                <a href="learn7.html"><button class="loginb">Log in</button></a>
+            <a href="learn9.html"><button class="signupb">Sign Up</button></a>
+            </div>
+        </header>
+        <div class="fieldscont">
+            <div class="field1">
+                <div class="f111">
+                <div class="field11">
+                    <div class="content1">Content 1</div>
+                </div>
+            </div>
+            </div>
+            <div class="field2">
+                <div class="field21"><div class="content2">Content 2</div></div>
+                <div class="field22"><div class="content3">Content 3</div></div>
+            </div>
+            <div class="field3">
+                <div class="upper3">
+                <div class="field31"><div class="content4">Content 4</div></div>
+                <div class="field32"><div class="content5">Content 5</div></div>
+            </div>
+            <div class="bot3">
+                <div class="field33"><div class="content6">Content 6</div></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
